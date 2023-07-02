@@ -10,6 +10,7 @@ import pymysql
 
 logging.basicConfig(filename="scrapper.log" , level=logging.INFO)
 
+
 service = Service('path_to_chromedriver')  
 chrome_options = Options()
 chrome_options.add_argument('--headless')#  # Run Chrome in headless mode, remove this line if you want to see the browser window

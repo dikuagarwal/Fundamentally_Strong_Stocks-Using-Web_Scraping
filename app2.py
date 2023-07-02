@@ -12,6 +12,7 @@ app = Flask(__name__)
 def home():
 	return render_template('index.html')
 
+
 # route to html page - "table"
 @app.route('/review',methods=["POST"])
 def table():
@@ -56,8 +57,6 @@ def table():
 			logging.info("Sql query execution error: ",e)
 			query1 = '''SELECT * FROM fundamental_stocks.stocks where ROCE>20 and Div_Yld>2.75 order by ROCE desc limit 30 ;'''
 			pdf = pd.read_sql(query1,engine)
-
-		# print(pdf)
 
 		return render_template('table.html', tables=[pdf.to_html()], titles=[''])
 

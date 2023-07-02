@@ -399,3 +399,4 @@ INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.62.186:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:selenium.webdriver.common.selenium_manager:Applicable driver not found; attempting to install with Selenium Manager (Beta)

@@ -4,6 +4,7 @@ body {
   body * {
     box-sizing: border-box;
   }
+  
   h1 {
     color: rgba(10, 161, 55, 0.939);
     text-align: center
