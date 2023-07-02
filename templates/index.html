@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<div class="content" style="background-color: #DBF9FC; border-style: groove;">
+    <div style="background-color: #e22121b7;padding-bottom: 0.5px;"><hr>
+    <h1 class="title" style="color: rgba(8, 20, 12, 0.939);text-align: center">Let's Find Fundamentally<br> Strong Stocks...
+    </h1></div>
+
+    <div class="form">
+
+        <form action="/review" method="POST">
+            <div class="form" style="text-align: center">
+                <br>
+                <label for="operation1">Stocks based on:</label>
+                <select id="operation1" name="operation1">
+                    <option value="CMP">Current Market Price</option>
+                    <option value="P2E_Ratio">P/E Ratio</option>
+                    <option value="ROCE">ROCE</option>
+                    <option value="Div_Yld">Dividend Yield</option>
+                    <option value="Market_Cap">Market Cap</option>
+                    <option value="Qtr_Sales_Growth">Qtr Sales Growth</option>
+                    <option value="Qtr_Profit_Growth">Qtr Profit Growth</option>
+                </select>
+
+                <label for="operator1">Operator:</label>
+                <select id="operator1" name="operator1">
+                    <option value=">=">Greater Than and Equal to</option>
+                    <option value="<=">Less Than and Equal to</option>
+                    <option value="=">Equal</option>
+                </select>
+
+                <label for="content1">Value:</label>
+                <input type="text" name="content1" id="content1" placeholder="Insert Numeric Value Only">
+            </div><br>
+
+            <div class="form-group" style="text-align: center">
+                <label for="operation2">and based on:</label>
+                <select id="operation2" name="operation2">
+                    <option value="CMP">Current Market Price</option>
+                    <option value="P2E_Ratio">P/E Ratio</option>
+                    <option value="ROCE">ROCE</option>
+                    <option value="Div_Yld">Dividend Yield</option>
+                    <option value="Market_Cap">Market Cap</option>
+                    <option value="Qtr_Sales_Growth">Qtr Sales Growth</option>
+                    <option value="Qtr_Profit_Growth">Qtr Profit Growth</option>
+                    <option value="None">None</option>
+                </select>
+
+                <label for="operator2">Operator:</label>
+                <select id="operator2" name="operator2">
+                    <option value=">=">Greater Than and Equal to</option>
+                    <option value="<=">Less Than and Equal to</option>
+                    <option value="=">Equal</option>
+                </select>
+
+                <label for="content2">Value:</label>
+                <input type="text" name="content2" id="content2" placeholder="Insert Numeric Value Only">
+            </div><br>
+
+            <div class="form-group" style="text-align: center">
+                <label for="order">Sort by:</label>
+                <select id="order" name="order">
+                    <option value="CMP">Current Market Price</option>
+                    <option value="P2E_Ratio">P/E Ratio</option>
+                    <option value="ROCE">ROCE</option>
+                    <option value="Div_Yld">Dividend Yield</option>
+                    <option value="Market_Cap">Market Cap</option>
+                    <option value="Qtr_Sales_Growth">Qtr Sales Growth</option>
+                    <option value="Qtr_Profit_Growth">Qtr Profit Growth</option>
+                </select>
+
+                <label for="limit">Select Only Top</label>
+                <input type="text" name="limit" id="limit" placeholder="Insert Numeric Value Only">
+                <label for="limit">Shares</label>
+            </div><br><br>
+            
+
+            <div class="find" 
+            style="text-align: center
+            ;background-color: #0f85d8d2; 
+            padding-top: 10px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            border-style: outset;">
+                
+                <label for="find">Click here</label>
+                <input type="submit" value="Search">
+            </div>
+  
+        </form>
+
+
+    </div>
+</div>
+
+
+{% endblock %}

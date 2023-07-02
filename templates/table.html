@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Fundamentally Strong Stocks </title>	
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">		 -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<style>
+			body {
+			  background-image: url('https://wallpapercave.com/wp/wp2128371.jpg');
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<div align="center"><br>
+			<div style="background-color: #e22121dd;border-style: groove;">
+            <h1 style="color: rgba(8, 20, 12, 0.939);text-align: center">Fundamentally Strong Stocks</h1></div>
+			<table>
+				<h1>
+				<!--Displaying the converted table-->
+					{% for table in tables %}
+					<h2>{{titles[loop.index]}}</h2>							
+					{{ table|safe }}
+					{% endfor %}	
+				</h1>
+			</table>
+		</div>
+	</body>
+</html>

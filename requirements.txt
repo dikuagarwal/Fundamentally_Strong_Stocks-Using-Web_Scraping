@@ -1,0 +1,8 @@
+Flask
+requests
+bs4
+pymongo
+selenium
+pandas
+sqlalchemy
+pymysql
