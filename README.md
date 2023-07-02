@@ -1,6 +1,12 @@
 # Fundamentally_Strong_Stocks-Using-Web_Scraping
 This web scraping project uses Python and MySQL database to gather information about fundamentally strong stocks for investment purpose.
+Additionally, we design a user interactive web page and connect it to a python server using Flask API.
 
+This project Divided in two parts:
+1. Solving Problem Statment
+2. Designing a user interactive web page and connecting it to our python server using flask API.
+
+   
 ## Problem Statment:
 
 - Screener is one of the most popular website for getting inforamtion about all listed stocks in indian share market.
@@ -20,9 +26,9 @@ This web scraping project uses Python and MySQL database to gather information a
 - Execute the sql query on table in order to get desired output.
 - Finally store the output shortlisted stocks in "Final_result.csv" file.
 
-# Conclusion:
+## Conclusion:
 
-Based on analysis, we have shortlisted stocks that meet the following criteria.
+Based on our analysis, we have shortlisted stocks that meet the following criteria.
 
   1. The return on Capital Employed (ROCE) is greater than 20%
   2. The dividend yield is equal to or greater than saving account interest rate of 2.75%
