@@ -6,6 +6,9 @@ This project Divided in two parts:
 1. Designing a user interactive web page and connecting it to our python server using flask API.
 2. Solving Problem Statment
 
+### Key-Skills:
+- Python - Pandas - MySQL - Flask - HTML - CSS
+- Data Analysis - Stock Market Fundamentals - Web Scraping
    
 ## Problem Statment:
 
@@ -22,7 +25,7 @@ This project Divided in two parts:
 ## User Interactive Web-page:
 
 - Users will interact with our Python server through this web page.
-- Users can apply their own chosen filters (such as a P/E ratio greater than 15, dividend yield greater than 5%, etc.) on the stock database to retrieve fundamentally strong stocks data.
+- Users can apply their own choice filters (such as a P/E ratio greater than 15, dividend yield greater than 5%, etc.) on the stock database to retrieve fundamentally strong stocks data.
 - Additionally, users have the option to set the top N number of shares that they want to display. The default value for N is 15.
 ![image](https://github.com/harshjalan0602/Fundamentally_Strong_Stocks-Using-Web_Scraping/assets/129959008/bd1625bb-cceb-49c6-8378-00efb1cd2a8f)
 - After filling the form and click on submit button, the web page send a request to the python server using HTML forms, specifying the HTTP method as "POST".
