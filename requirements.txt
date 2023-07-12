@@ -6,3 +6,4 @@ selenium
 pandas
 sqlalchemy
 pymysql
+gunicorn==19.7.1
